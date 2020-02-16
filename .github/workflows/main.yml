@@ -12,9 +12,9 @@ jobs:
                 root_file: main.tex
                 compiler: xelatex
                 args: -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+      - name: move pdf to published
+        run:  mv ./main.pdf ./published/cv.pdf
       - name: push files back
         uses: mikeal/publish-to-github-action@master
         env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: move pdf to published
-        run: mv ./main.pdf ./published/cv.pdf
