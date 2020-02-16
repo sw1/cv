@@ -16,10 +16,10 @@ jobs:
         uses: mikeal/publish-to-github-action@master
         env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: move pdf to public
+      - name: move pdf to published
         run: mv ./main.pdf ./published/cv.pdf
       - name: publish to github pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-                deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 publish_dir: ./published
