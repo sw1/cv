@@ -11,4 +11,4 @@ jobs:
         with:
                 root_file: main.tex
                 compiler: xelatex
-                args: -interaction=nonstopmode
+                args: -latexoption=-file-line-error -latexoption=-interaction=nonstopmode

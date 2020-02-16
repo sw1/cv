@@ -3,9 +3,9 @@
 </h1>
 
 <p align="center">
-	Stephen Woloszynek\
-	MD/PhD Candidate\
-	Drexel University\
+	Stephen Woloszynek<br/>
+	MD/PhD Candidate<br/>
+	Drexel University<br/>
 	Dept. of Electrical and Computer Engineering
 </p>
 
