@@ -13,7 +13,11 @@ jobs:
                 compiler: xelatex
                 args: -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
       - name: move pdf to compiled folder
-        run: mv ./main.pdf ./publish/cv.pdf
+        run: mv ./main.pdf ./compiled/cv.pdf
+      - name: push files back
+        uses: mikeal/publish-to-github-action@master
+        env:
+                GITHUB_TOKEN: ${{ secretes.GITHUB_TOKEN }}
       - name: publish to github pages
         uses: peaceiris/actions-gh-pages@v2.0.0
         env:
