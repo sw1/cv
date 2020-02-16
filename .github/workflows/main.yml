@@ -12,8 +12,6 @@ jobs:
                 root_file: main.tex
                 compiler: xelatex
                 args: -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
-      - name: move pdf to compiled folder
-        run: mv ./main.pdf ./compiled/cv.pdf
       - name: push files back
         uses: mikeal/publish-to-github-action@master
         env:
