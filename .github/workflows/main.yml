@@ -12,3 +12,7 @@ jobs:
                 root_file: main.tex
                 compiler: xelatex
                 args: -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+      - name: upload asset
+        uses: actions/upload-release-asset@v1
+        env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
