@@ -18,7 +18,7 @@ jobs:
                 compile: lualatex
                 args: -interaction=nonstopmode
       - name: compile_cv3
-        users: dante-ev/latex-action@master
+        uses: dante-ev/latex-action@master
         with:
                 root_file: main.tex
                 compile: xelatex
