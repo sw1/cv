@@ -4,7 +4,7 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Git repository
+      - name: set up git repository
         uses: actions/checkout@v2
       - name: compile_cv
         uses: dante-ev/latex-action@master
@@ -12,7 +12,11 @@ jobs:
                 root_file: main.tex
                 compiler: xelatex
                 args: -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
-      - name: upload asset
-        uses: actions/upload-release-asset@v1
+      - name: move pdf to compiled folder
+        run: mv ./main.pdf ./publish/cv.pdf
+      - name: publish to github pages
+        uses: peaceiris/actions-gh-pages@v2.0.0
         env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+                PUBLISH_BRANCH: gh-pages
+                PUBLISH_DIR: ./compiled
