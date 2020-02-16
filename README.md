@@ -11,6 +11,6 @@
 
 <div align="center">
   <a href="https://github.com/sw1/cv">
-    <img alt="GithubActions" src="https://github.com/sw1/cv/workflows/build_latex_docs/badge.svg" />
+    <img alt="GithubActions" src="https://github.com/sw1/cv/workflows/build_cv/badge.svg" />
   </a>
 </div>

@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v1
-      - name: compile_cv3
+        uses: actions/checkout@v2
+      - name: compile_cv
         uses: dante-ev/latex-action@master
         with:
                 root_file: main.tex
