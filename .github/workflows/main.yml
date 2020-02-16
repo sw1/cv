@@ -1,9 +1,5 @@
 name: build_cv
-on:
-  push:
-    paths:
-    - '**.tex'
-    - '**.cls'
+on: [push]
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -14,4 +10,16 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: main.tex
-          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmodea
+          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+      - name: compile_cv2
+        uses: dante-ev/latex-action@master
+        with:
+                root_file: main.tex
+                compile: lualatex
+                args: -interaction=nonstopmode
+      - name: compile_cv3
+        users: dante-ev/latex-action@master
+        with:
+                root_file: main.tex
+                compile: xelatex
+                args: -interaction=nonstopmode
