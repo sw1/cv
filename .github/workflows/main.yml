@@ -15,7 +15,7 @@ jobs:
       - name: push files back
         uses: mikeal/publish-to-github-action@master
         env:
-                github_token: ${{ secrets.GITHUB_TOKEN }}
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: move pdf to public
         run: mv ./main.pdf ./published/cv.pdf
       - name: publish to github pages
