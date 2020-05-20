@@ -619,6 +619,7 @@
   \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
 
+
 % Define an environment for cvconfs
 \newenvironment{cvconfs}{%
   \vspace{\acvSectionContentTopSkip}
