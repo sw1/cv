@@ -8,10 +8,11 @@
   </a>
 </div>
 
-### Stephen Woloszynek<br/>
-MD/PhD Candidate<br/>
-Drexel University<br/>
-Dept. of Electrical and Computer Engineering<br/><br/>
+### Stephen Woloszynek, MD, PhD<br/>
+PGY1 Resident Physician<br/>
+Anesthesia<br/>
+Beth Israel Deaconess Medical Center<br/>
+Harvard Medical School<br/><br/>
 [cv.pdf](https://sw1.github.io/cv/)
 
 </div>
