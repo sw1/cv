@@ -9,7 +9,7 @@
 </div>
 
 ### Stephen Woloszynek, MD, PhD<br/>
-PGY1 Resident Physician<br/>
+CA1/PGY2 Resident Physician<br/>
 Anesthesia<br/>
 Beth Israel Deaconess Medical Center<br/>
 Harvard Medical School<br/><br/>
