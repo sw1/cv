@@ -6,6 +6,10 @@ jobs:
     steps:
       - name: set up git repository
         uses: actions/checkout@v2
+      - name: Install FontAwesome
+        run: |
+          apt-get update -y
+          apt-get install -y fonts-font-awesome
       - name: compile_cv
         uses: dante-ev/latex-action@latest
         with:
