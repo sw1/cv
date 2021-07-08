@@ -7,7 +7,7 @@ jobs:
       - name: set up git repository
         uses: actions/checkout@v2
       - name: compile_cv
-        uses: dante-ev/latex-action@master
+        uses: dante-ev/latex-action@latest
         with:
                 root_file: main.tex
                 compiler: xelatex
