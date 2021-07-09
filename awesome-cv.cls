@@ -75,7 +75,7 @@
 % Needed to use icons from font-awesome
 % (https://github.com/posquit0/latex-fontawesome)
 %\RequirePackage{fontawesome}
-\usepackage{fontawesome}
+\RequirePackage{fontawesome}
 \RequirePackage[default,opentype]{sourcesanspro}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
@@ -161,9 +161,8 @@
 %-------------------------------------------------------------------------------
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
-%\setfontfamily\FA[Path=\@fontdir]{FontAwesome}
+\setfontfamily\FA[Path=\@fontdir]{FontAwesome}
 %\newfontfamily{\FA}{FontAwesome.otf}
-\newfontfamily{\FA}{FontAwesome Regular}
 
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
