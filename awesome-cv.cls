@@ -161,7 +161,8 @@
 %-------------------------------------------------------------------------------
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
-\setfontfamily\FA[Path=\@fontdir]{FontAwesome}
+%\setfontfamily\FA[Path=\@fontdir]{FontAwesome}
+\newfontfamily{\FA}{FontAwesome.otf}
 
 % Set font for header (default is Roboto)
 \newfontfamily\headerfont[
