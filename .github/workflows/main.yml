@@ -10,8 +10,6 @@ jobs:
         run: |
           sudo apt-get update -y
           sudo apt-get install texlive-fonts-recommended
-          tlmgr info --list fontawesome
-          tlmgr info --list fontawesome5
       - name: compile_cv
         uses: dante-ev/latex-action@latest
         with:
