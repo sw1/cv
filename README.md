@@ -9,8 +9,8 @@
 </div>
 
 ### Stephen Woloszynek, MD, PhD<br/>
-CA2/PGY3 Resident Physician<br/>
-Anesthesia<br/>
+Anesthesiolgist<br/>
+PGY5 Loring Scholar<br/>
 Beth Israel Deaconess Medical Center<br/>
 Harvard Medical School<br/><br/>
 [cv.pdf](https://sw1.github.io/cv/)
