@@ -1,0 +1,55 @@
+\documentclass[12pt]{letter}
+\usepackage{CormorantGaramond}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{graphicx} 
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\newcommand{\recip}{Recipient}
+\newcommand{\dept}{Dept. of Anesthesia}
+\newcommand{\hosp}{Beth Israel Deaconess Medical Center}
+\newcommand{\hospshort}{BI}
+\newcommand{\addr}{330 Brookline Ave \\ Boston, MA 02215}
+\newcommand{\city}{Boston}
+\newcommand{\researchgroup}{the group}
+
+\begin{document}
+\date{}
+
+\begin{letter}{
+\normalsize{Stephen Woloszynek MD PhD} \hfill \normalsize{\today} \\
+\vspace{.1cm}
+\fontsize{8.5}{10}\selectfont{
+123 address st unit 123 \\
+Boston, MA, 01234 \\
+215-555-5555 \\
+email.com} \\
+
+\vspace{1cm}
+
+\normalsize{[Recipient's Name]} \\
+\vspace{.1cm}
+\fontsize{8.5}{10}\selectfont{\dept \\
+\hosp \\
+\addr}
+}
+
+
+\opening{Dear \recip,}
+\vspace{.2cm}
+
+Text goes here.
+
+
+\vspace{.5cm}
+Sincerely, 
+
+\vspace{.2cm}
+
+\includegraphics[width=2in]{signature.png} 
+
+Stephen Woloszynek MD PhD
+
+\end{letter}
+
+\end{document}
